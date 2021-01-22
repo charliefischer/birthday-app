@@ -1,7 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;
+      margin-top: 100px;
+      font-family: Helvetica Neue;
+}
+h1   {color: #000;
+      font-family: Helvetica;
+      font-size: 48px;
+      justify-self: center;
+  }
+h3 {font-size: 36px;
+    margin: 32px 0 32px 0;}
+label    {font-weight: 500;}
+section {display: flex;
+          justify-content: center; }
+.name {width:90%;}
+form { height: 100%;}
+input {border:none;
+        }
+input[type=text]:focus {
+  border: 3px solid #333;
+}
+input[type=submit] {
+  position: block;
+  width: 90%;
+  height: 36px;
+  margin-top: 32px;
+}
+input[type=submit]:hover {
+  background-color: powderblue;
+  border: 2px solid rgb(239, 239, 239);
+}
+</style>
+</head>
+<body>
+
+<section position: center>
 <form action='/save_the_date' method="post">
   <h1> Hello There </h1>
   <h3> What's your name? </h3>
-  <input type="text" name="name">
+  <input type="text" name="name"  class="name">
   <h3> When's your birthday? </h3>
   <label for="day"> day: </label>
   <input type="text" id="day" name="day">
@@ -23,3 +63,5 @@
   </datalist>
   <input type="submit" value="Enter">
 </form>
+</section>
+</body>
