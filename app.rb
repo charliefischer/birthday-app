@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require './lib/birthday.rb'
+require './lib/date_of_birth.rb'
 
 class Birthday < Sinatra::Base
   get '/' do
@@ -8,9 +8,9 @@ class Birthday < Sinatra::Base
 
   post '/save_the_date' do
     @name = params[:name]
-    @day = params[:day]
-    @month = parmas[:month]
-    Birthday.new(@day, @month)
+    day = params[:day]
+    month = params[:month]
+    @result = DateOfBirth.new(day, month).birthday_checker
     erb(:save_the_date)
   end
 

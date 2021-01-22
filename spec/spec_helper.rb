@@ -17,7 +17,7 @@ require './app.rb'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
-require './lib/birthday.rb'
+require './lib/date_of_birth.rb'
 
 
 

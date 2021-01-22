@@ -1,1 +1,5 @@
+<% if @result == true %>
 <h1> Happy Birthday <%= @name %>! </h1>
+<% else %>
+<h1> <%= @result %> days to go, <%= @name %> </h1>
+<% end %>
