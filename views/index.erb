@@ -1,0 +1,25 @@
+<form action='/save_the_date' method="post">
+  <h1> Hello There </h1>
+  <h3> What's your name? </h3>
+  <input type="text" name="name">
+  <h3> When's your birthday? </h3>
+  <label for="day"> day: </label>
+  <input type="text" id="day" name="day">
+  <label for="month"> month: </label>
+  <input list="months" name="month" id="month">
+  <datalist id="months">
+      <option value="January">
+      <option value="February">
+      <option value="March">
+      <option value="April">
+      <option value="May">
+      <option value="June">
+      <option value="July">
+      <option value="August">
+      <option value="September">
+      <option value="October">
+      <option value="November">
+      <option value="December">
+  </datalist>
+  <input type="submit" value="Enter">
+</form>
