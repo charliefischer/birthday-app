@@ -34,7 +34,7 @@ private
 
   def how_long_left
     @birthday -= Date.today
-    @birthday.to_i >= 1 ? @birthday.to_i : @birthday.to_i + 365
+    @birthday.to_i >= 1 ? @birthday.to_i : @birthday.to_i + 1.year
   end
 
   def birthday?

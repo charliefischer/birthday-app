@@ -5,6 +5,6 @@ feature 'Days to go' do
     fill_in('day', with: '23')
     select 'January', :from => 'month'
     click_button 'Enter'
-    expect(page).to have_content('1 day till your birthday, Charlie')
+    expect(page).to have_content('1 days to go, Charlie')
   end
 end
